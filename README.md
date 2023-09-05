@@ -93,15 +93,16 @@ services:
 
 
 2. Execute e inicialize os serviços na sua máquina com o DockerDesktop
-<img src="/tech-chellenge/img/subindoserviços.PNG">
+<img width="960" alt="subindoserviços" src="https://github.com/edcarlossilva1/techchallenge-master/assets/138680851/727b1fb2-358d-4903-98ae-d09237a2cee2">
 
 3.Execute o Postgres através do endereço http://localhost:5050/browser/
 
 ### Relaizar Login 
-<img src="/tech-chellenge/img/logindocker.PNG">
+<img width="959" alt="logindocker" src="https://github.com/edcarlossilva1/techchallenge-master/assets/138680851/65aa8223-264a-4cdb-9dad-cfdcba782a94">
+
 
 ### Visualizando Base, schemas e tabelas criadas no inicio do projeto
-<img src="/tech-chellenge/img/verificatabela.PNG">
+<img width="957" alt="verificatabela" src="https://github.com/edcarlossilva1/techchallenge-master/assets/138680851/4b6d74d7-6c0f-4dfb-ba69-2152fba559a4">
 
 ## Jornada
 
