@@ -6,10 +6,10 @@ Projeto Teche Challenge realizado para pós-graduação [FIAP](https://www.fiap.
 
 1. [Tecnologias](#tecnologias)
 2. [Ferramentas](#ferramentas)
-4. [Documentação](/DOCUMENTACAO.md)
-5. [Jornada](#jornada)
-6. [Autores](#autores)
-7. [Licença](#licença)
+3. [Documentação](/DOCUMENTACAO.md)
+4. [Jornada](#jornada)
+5. [Autor](#autor)
+6. [Licença](#licença)
 
 ## Tecnologias
 
@@ -22,6 +22,9 @@ Linguagem de programação escolhida para implementar a lógica do sistema, gara
 Utilizado como framework para agilizar o desenvolvimento da API, oferecendo recursos como injeção de dependências, mapeamento de URLs, tratamento de requisições HTTP e muito mais.
 
 ### [h2](https://www.postgresql.org/docs/)
+Banco de dados utilizado para armazenar e gerenciar as informações relacionadas a eletrodomésticos, endereços e pessoas. O PostgreSQL é conhecido por sua robustez e confiabilidade, adequado para aplicações de larga escala.
+
+### [PostgreSQL](https://www.postgresql.org/docs/)
 Banco de dados utilizado para armazenar e gerenciar as informações relacionadas a eletrodomésticos, endereços e pessoas.
 
 ### [Maven](https://maven.apache.org/guides/index.html)
@@ -43,6 +46,63 @@ Plataforma de colaboração e testes de API que permite enviar e receber solicit
 Plataforma de hospedagem de repositórios de controle de versão Git, utilizada para armazenar e gerenciar o código-fonte do projeto. O GitHub permite o trabalho colaborativo, controle de versões, rastreamento de alterações e facilita a integração com ferramentas de desenvolvimento.
 
 
+## Instalação
+Passos para a execução do projeto utilizando PostgreSQL
+
+1. Instale e configure o PostgreSQL: 
+   Script utilizado para criação via powershell: 
+
+   version: "3.7"
+services:
+
+ # POSTGRES SERVER
+  pg-docker:
+    image: postgres:14-alpine
+    container_name: tech-postgresql
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_PASSWORD: 1234567
+    ports:
+      - 5433:5432
+    volumes:
+      - ./.data/postgresql/data:/var/lib/postgresql/data
+    networks:
+      - tech-network
+
+
+  # PGADMIN
+  pgadmin-docker:
+    image: dpage/pgadmin4
+    container_name: tech-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: me@example.com
+      PGADMIN_DEFAULT_PASSWORD: 1234567
+    ports:
+      - 5050:80
+    volumes:
+      - ./.data/pgadmin:/var/lib/pgadmin
+    depends_on:
+      - pg-docker
+    networks:
+      - tech-network
+
+  # REDE
+  networks:
+    tech-network:
+      driver: bridge
+
+
+2. Execute e inicialize os serviços na sua máquina com o DockerDesktop
+<img src="/tech-chellenge/img/subindoserviços.PNG">
+
+3.Execute o Postgres através do endereço http://localhost:5050/browser/
+
+### Relaizar Login 
+<img src="/tech-chellenge/img/logindocker.PNG">
+
+### Visualizando Base, schemas e tabelas criadas no inicio do projeto
+<img src="/tech-chellenge/img/verificatabela.PNG">
+
 ## Jornada
 
 ### Primeira fase
@@ -50,13 +110,18 @@ Plataforma de hospedagem de repositórios de controle de versão Git, utilizada 
 O desenvolvimento do projeto foi muito desafiador uma vez que não trabalho como programador utilizando a linguagem de programação JAVA e também por ter encarado o desafio sozinho, obtive conhecimento com as live's coda comigo e os videos da plataforma da Fiap e Alura. 
 Para mim é tudo novo tenho o conhecimento bem superficial, espero ter atingido um pouco da espectiva do proposto no exercicio e pretendo aprimorar mais ainda com a continuidade da Segunda fase. 
 
+### Segunda fase
+
+Nesta segunda fase o desafio continua grande, estou aprendeno muito com as lives do coda comigo, tem me facilitado muito em alguns entendimentos e abordagens para aplicação em meu projeto. Prentendo evoluir mais o projeto na terceira fase.  
+
 ## Autor
 
 - [Ed Carlos](email: rm349820@fiap.com.br)
 
-Agradeço a minha esposa [Priscia Angelica da Silva] que contribuiu com o projeto me apoiando com as atividades pessoais em que não pude participar devido aos estudos.  
+Agradeço a minha esposa[Priscia Angelica da Silva] que continua contribuindo com o projeto me apoiando com as atividades pessoais em que não pude participar devido aos estudos.  
 
 
 ## Licença
 
 [Licença MIT](https://opensource.org/license/mit/): permite o uso, a modificação e a distribuição do software sem restrições significativas.
+
