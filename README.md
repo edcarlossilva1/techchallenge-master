@@ -113,7 +113,7 @@ Para mim é tudo novo tenho o conhecimento bem superficial, espero ter atingido 
 
 ### Segunda fase
 
-Nesta segunda fase o desafio continua grande, estou aprendeno muito com as lives do coda comigo, tem me facilitado muito em alguns entendimentos e abordagens para aplicação em meu projeto. Prentendo evoluir mais o projeto na terceira fase.  
+Nesta segunda fase o desafio continua grande, estou aprendendo muito com as lives do coda comigo, tem me facilitado muito em alguns entendimentos e abordagens para aplicação em meu projeto. Prentendo evoluir mais o projeto na terceira fase.  
 
 ## Autor
 
