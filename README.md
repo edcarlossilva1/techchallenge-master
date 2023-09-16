@@ -6,10 +6,17 @@ Projeto Teche Challenge realizado para pós-graduação [FIAP](https://www.fiap.
 
 1. [Tecnologias](#tecnologias)
 2. [Ferramentas](#ferramentas)
+<<<<<<< HEAD
 3. [Documentação](/DOCUMENTACAO.md)
 4. [Jornada](#jornada)
 5. [Autor](#autor)
 6. [Licença](#licença)
+=======
+4. [Documentação](/DOCUMENTACAO.md)
+5. [Jornada](#jornada)
+6. [Autores](#autores)
+7. [Licença](#licença)
+>>>>>>> 9b541285010e3c69a30076b2fb96df74e7d0a814
 
 ## Tecnologias
 
@@ -24,9 +31,12 @@ Utilizado como framework para agilizar o desenvolvimento da API, oferecendo recu
 ### [h2](https://www.postgresql.org/docs/)
 Banco de dados utilizado para armazenar e gerenciar as informações relacionadas a eletrodomésticos, endereços e pessoas. O PostgreSQL é conhecido por sua robustez e confiabilidade, adequado para aplicações de larga escala.
 
+<<<<<<< HEAD
 ### [PostgreSQL](https://www.postgresql.org/docs/)
 Banco de dados utilizado para armazenar e gerenciar as informações relacionadas a eletrodomésticos, endereços e pessoas.
 
+=======
+>>>>>>> 9b541285010e3c69a30076b2fb96df74e7d0a814
 ### [Maven](https://maven.apache.org/guides/index.html)
 Gerenciador de dependências utilizado para facilitar a configuração e o gerenciamento das bibliotecas e dependências do projeto.
 
@@ -46,6 +56,7 @@ Plataforma de colaboração e testes de API que permite enviar e receber solicit
 Plataforma de hospedagem de repositórios de controle de versão Git, utilizada para armazenar e gerenciar o código-fonte do projeto. O GitHub permite o trabalho colaborativo, controle de versões, rastreamento de alterações e facilita a integração com ferramentas de desenvolvimento.
 
 
+<<<<<<< HEAD
 ## Instalação
 Passos para a execução do projeto utilizando PostgreSQL
 
@@ -103,6 +114,8 @@ services:
 ### Visualizando Base, schemas e tabelas criadas no inicio do projeto
 <img src="/tech-chellenge/img/verificatabela.PNG">
 
+=======
+>>>>>>> 9b541285010e3c69a30076b2fb96df74e7d0a814
 ## Jornada
 
 ### Primeira fase
@@ -110,15 +123,22 @@ services:
 O desenvolvimento do projeto foi muito desafiador uma vez que não trabalho como programador utilizando a linguagem de programação JAVA e também por ter encarado o desafio sozinho, obtive conhecimento com as live's coda comigo e os videos da plataforma da Fiap e Alura. 
 Para mim é tudo novo tenho o conhecimento bem superficial, espero ter atingido um pouco da espectiva do proposto no exercicio e pretendo aprimorar mais ainda com a continuidade da Segunda fase. 
 
+<<<<<<< HEAD
 ### Segunda fase
 
 Nesta segunda fase o desafio continua grande, estou aprendeno muito com as lives do coda comigo, tem me facilitado muito em alguns entendimentos e abordagens para aplicação em meu projeto. Prentendo evoluir mais o projeto na terceira fase.  
 
+=======
+>>>>>>> 9b541285010e3c69a30076b2fb96df74e7d0a814
 ## Autor
 
 - [Ed Carlos](email: rm349820@fiap.com.br)
 
+<<<<<<< HEAD
 Agradeço a minha esposa[Priscia Angelica da Silva] que continua contribuindo com o projeto me apoiando com as atividades pessoais em que não pude participar devido aos estudos.  
+=======
+Agradeço a minha esposa[Priscia Angelica da Silva] que contribuiu com o projeto me apoiando com as atividades pessoais em que não pude participar devido aos estudos.  
+>>>>>>> 9b541285010e3c69a30076b2fb96df74e7d0a814
 
 
 ## Licença
